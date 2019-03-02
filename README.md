@@ -1,2 +1,2 @@
-# zimple
-A simple theme for Hugo.
+# ximple
+An excellent simple theme for Hugo.
