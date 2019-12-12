@@ -1,2 +1,3 @@
-# ximple
-An excellent simple theme for Hugo.
+# Nova
+
+A clean theme for Hugo.
