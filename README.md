@@ -1,3 +1,3 @@
 # Nova
 
-A clean theme for Hugo.
+:milky_way: A clean theme for Hugo.
