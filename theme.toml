@@ -5,14 +5,14 @@ name = "Nova"
 license = "MIT"
 licenselink = "https://github.com/isudox/hugo-theme-nova/blob/master/LICENSE"
 description = "A clean theme for Hugo."
-homepage = "https://github.com/isudox/hugo-theme-nova"
+homepage = "https://github.com/isudox/hugo-theme-nova/"
 tags = ["simple", "clean"]
 features = ["simple", "clean"]
-min_version = "0.41"
+min_version = "0.1"
 
 [author]
   name = "isudox"
-  homepage = "https://github.com/isudox"
+  homepage = "https://github.com/isudox/"
 
 # If porting an existing theme
 [original]
