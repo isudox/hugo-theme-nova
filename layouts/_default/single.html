@@ -6,7 +6,7 @@
     <div class="post-meta">
       {{- if or .Params.author .Site.Params.author }}
       {{- .Params.author | default .Site.Params.author }} · {{ end }}
-      {{- .Date.Format "January 2, 2006" -}}
+      {{- .Date.Format "2006/01/01" -}}
     </div>
   </header>
   <div class="post-content">{{ .Content }}</div>
@@ -20,13 +20,12 @@
     </ul>
   </footer>
   {{- end }}
-  <!-- Comments area start -->
-  {{- if not (eq .Params.comments false) }}
+  {{- if not (eq .Params.show_comments false) }}
   {{- if .Site.DisqusShortname }}
   <div id="disqus_thread"></div>
   <script>
     var disqus_shortname = '{{ .Site.DisqusShortname }}';
-    (function() {
+    (function () {
       var d = document, s = d.createElement('script');
       s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
@@ -35,9 +34,10 @@
   </script>
   <noscript>
     Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+      comments powered by Disqus.
+    </a>
   </noscript>
-  <!-- Comments area end -->
   {{- end }}
   {{- end }}
 </article>

@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/isudox/hugo-theme-nova/blob/master/LICENSE"
 description = "A clean theme for Hugo."
 homepage = "https://github.com/isudox/hugo-theme-nova/"
-tags = ["simple", "clean"]
+tags = ["blog", "simple", "clean"]
 features = ["simple", "clean"]
 min_version = "0.1"
 
@@ -16,6 +16,6 @@ min_version = "0.1"
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  author= "nanxiaobei"
+  homepage = "https://github.com/nanxiaobei/"
+  repo = "https://github.com/nanxiaobei/hugo-paper/"
