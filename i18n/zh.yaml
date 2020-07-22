@@ -3,3 +3,15 @@
 
 - id: next_page
   translation: "下一页"
+
+- id: archive
+  translation: "文档"
+
+- id: tag
+  translation: "标签"
+
+- id: category
+  translation: "分类"
+
+- id: about
+  translation: "关于"

@@ -3,3 +3,15 @@
 
 - id: next_page
   translation: "Next Page"
+
+- id: archive
+  translation: "Archives"
+
+- id: tag
+  translation: "Tags"
+
+- id: category
+  translation: "Categories"
+
+- id: about
+  translation: "About"
