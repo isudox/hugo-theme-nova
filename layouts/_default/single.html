@@ -5,9 +5,9 @@
     <h1 class="post-title">{{ .Title }}</h1>
     {{- if not (eq .Params.show_date false) }}
     <div class="post-meta">
-      {{- dateFormat "2006/01/01" .Date -}}
+      {{- dateFormat "2006/01/02" .Date -}}
     </div>
-    {{- end }} 
+    {{- end }}
   </header>
   <div class="post-content">{{ .Content }}</div>
   {{- if .Params.tags }}
