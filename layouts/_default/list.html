@@ -6,9 +6,11 @@
 {{ $pctx = .Site }}
 {{ else }}
 <header class="page-header">
-  <h1>{{ if eq .Data.Singular "tag" }}{{ .Data.Term }}{{ else }}{{ i18n "archive" }}{{ end }}</h1>
+  <h1>{{ if eq .Data.Singular "tag" }}{{ .Data.Term }}{{ end }}</h1>
 </header>
 {{ end }}
+
+{{ if .IsHome }}
 
 {{ $paginator := .Paginate (where $pctx.RegularPages "Type" "in" .Site.Params.mainSections) }}
 
@@ -29,6 +31,7 @@
 {{ end }}
 {{ end }}
 
+
 {{ if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">
   <nav class="pagination">
@@ -42,4 +45,20 @@
 </footer>
 {{ end }}
 
+{{ else }}
+
+{{ range .Pages }}
+<article class="post-item">
+  <div class="post-info">{{- dateFormat "2006/01/02" .Date -}}</div>
+  <header class="entry-header">
+    <div>{{ .Title }}</div>
+  </header>
+  <!-- <footer class="entry-footer">
+    <time>{{- dateFormat "2006/01/02" .Date -}}</time>
+  </footer> -->
+  <a class="entry-link" href="{{ .Permalink }}"></a>
+</article>
+{{ end }}
+
+{{ end }}
 {{ partial "footer.html" . }}

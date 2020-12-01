@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Title -->
-  <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+  <title>{{ if .Title }}{{ .Title }}{{ end }}</title>
   <!-- Meta -->
   {{- if eq .Kind "page" }}
   <meta name="description" content="{{ .Summary }}">
@@ -48,9 +48,10 @@
       {{- end }}
       {{- if .Site.Menus.main }}
       <ul class="menu">
-        {{- range .Site.Menus.main }}
+        {{- range .Site.Menus.main.ByWeight }}
         <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
+          <a class="menu-list-link" href="{{ .URL }}">{{ .Identifier | i18n }}</a>
+          <!-- <a href="{{ .URL }}">{{ .Name }}</a> -->
         </li>
         {{- end }}
       </ul>
