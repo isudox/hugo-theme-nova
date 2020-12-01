@@ -46,17 +46,11 @@
 {{ end }}
 
 {{ else }}
-
 {{ range .Pages }}
 <article class="post-item">
-  <div class="post-info">{{- dateFormat "2006/01/02" .Date -}}</div>
-  <header class="entry-header">
-    <div>{{ .Title }}</div>
-  </header>
-  <!-- <footer class="entry-footer">
-    <time>{{- dateFormat "2006/01/02" .Date -}}</time>
-  </footer> -->
-  <a class="entry-link" href="{{ .Permalink }}"></a>
+  <div class="post-info">{{- dateFormat "2006-01-02" .Date -}}</div>
+  <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+  <hr>
 </article>
 {{ end }}
 
