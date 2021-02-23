@@ -1,6 +1,6 @@
 </main>
 <footer class="footer">
-  <span>&copy; {{ now.Year }}</span>
+  <span>&copy; {{ .Site.Params.StartYear }} - {{ now.Year }}</span>
   <span>&middot;</span>
   <span><a href="{{ "" | absURL }}">{{ .Site.Title }}</a></span>
   <span>&middot;</span>

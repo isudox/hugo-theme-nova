@@ -2,7 +2,9 @@
 
 <article class="post-single">
   <header class="post-header">
+    {{- if not (eq .Params.show_title false)  }}
     <h1 class="post-title">{{ .Title }}</h1>
+    {{- end }}
     {{- if not (eq .Params.show_date false) }}
     <div class="post-meta">
       {{- dateFormat "2006/01/02" .Date -}}
