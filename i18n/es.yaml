@@ -1,0 +1,17 @@
+- id: prev_page
+  translation: "Página previa"
+
+- id: next_page
+  translation: "Página siguiente"
+
+- id: archive
+  translation: "Archivos"
+
+- id: tag
+  translation: "Etiquetas"
+
+- id: category
+  translation: "Categorías"
+
+- id: about
+  translation: "Sobre Mí"
